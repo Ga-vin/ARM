@@ -1,0 +1,7 @@
+	AREA Init, CODE, READONLY
+	ENTRY
+Start
+	LDR R13, =0x1000
+	IMPORT main
+	B main
+	END
